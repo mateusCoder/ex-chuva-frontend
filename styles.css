@@ -107,17 +107,17 @@
 .language span{
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .account{
-    margin-right: 3rem;
+    margin-right: 2.5rem;
     display: flex;
     align-items: center;
 }
 
 .perfil-data p{
-    margin-right: 1rem;;
+    margin-right: 0.428rem;;
     font-family: 'Quicksand';
     font-weight: normal;
     color: #333333;
@@ -125,17 +125,17 @@
 
 p.welcome {
     text-align: right;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 p.email{
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 /*Rever para deixar a imagem redonda*/
 .account img{
-    width: 48px;
-    height: 48px;
+    height: 1.875rem;
+    border-radius: 50%;    
 }
 
 
