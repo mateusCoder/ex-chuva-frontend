@@ -132,10 +132,81 @@ p.email{
     font-size: 0.75rem;
 }
 
-/*Rever para deixar a imagem redonda*/
 .account img{
     height: 1.875rem;
     border-radius: 50%;    
+}
+
+.information{
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.information p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+
+    letter-spacing: 0.05em;
+    color: #ED7839;
+
+    margin-left: 2.7rem;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.8rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button{
+    height: 1.9rem;
+    margin-left: 0.3rem;
+    background: #ED7839;
+
+    border: none;
+    border-radius: 4px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+#download,
+#favorite,
+#doi{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+#download{
+    width: 7.5rem;
+}
+
+#favorite,
+#doi{
+    width: 2.68rem;
+}
+
+.options a{
+    margin-top: 0.75rem;
+
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+
+    letter-spacing: 0.05em;
+    color: #ED7839;
 }
 
 
