@@ -155,8 +155,11 @@ p.email{
 }
 
 .options{
+    width: 250px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-right: 2.8rem;
 }
 
@@ -203,11 +206,90 @@ p.email{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 0.875rem;
+    font-size: 0.865rem;
 
     letter-spacing: 0.05em;
     color: #ED7839;
 }
 
+/*VOltar */
+.video{
+    margin: 20px 3.5rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video .painel{
+    width: 15.125rem;
+}
+
+.painel{
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+h3{
+    height: 2.813rem;
+    text-indent: 0.938rem;
+    display: flex;
+    align-items: center;
+
+    background: #FDF1EB;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px 3px 0px 0px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    
+    color: #4E4E4E;
+}
+
+.text-area{
+    height: 24.625rem;
+    padding: 0.938rem;
+
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: 0.02em;
+
+    color: #5C5C5C;
+
+    overflow-y: auto;
+}
+
+.text-area::-webkit-scrollbar {
+	width: 3px;
+}
+
+.text-area::-webkit-scrollbar-track{
+    background-color: #E7E7E7;
+    border-radius: 5px;
+}
+
+.text-area::-webkit-scrollbar-thumb{
+    background-color: #BFBFBF;
+    border-radius: 5px;
+}
+
+.text-area::-webkit-scrollbar-thumb:hover{
+    background-color: #ccc;
+}
+
+.authors{
+    margin-top: 2rem;
+    line-height: 1.25rem;
+}
+
+.authors p{
+    margin-top: 0.32rem;
+}
+
+.institutes{
+    margin-top: 2.5rem;
+}
 
 
