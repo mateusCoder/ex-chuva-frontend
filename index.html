@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SLACA</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
     <section class="menu">
         <div>
@@ -63,7 +66,8 @@
             </div>
         </div>
         <div class="video">
-            <iframe src="https://www.youtube.com/embed/gO8N3L_aERg" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/gO8N3L_aERg" title="YouTube video player" frameborder="0"
+                allowfullscreen></iframe>
             <div class="painel">
                 <h3>Detalhes</h3>
                 <div class="text-area">
@@ -119,7 +123,7 @@
                         questionamentos ou sugestões para o autor!
                     </p>
                     <div class="divide">
-                        <button class="create-topic">
+                        <button class="create-topic" onclick="CreateTopic('header-topic', 'form')">
                             <div class="more">
                                 <div class="vertical"></div>
                                 <div class="horizontal"></div>
@@ -127,6 +131,62 @@
                             criar tópico
                         </button>
                         <div class="line"></div>
+                    </div>
+                </div>
+                <!-- Formulário -->
+                <div class="form">
+                    <span>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</span>
+                    <div class="area-form">
+                        <p>Assunto</p>
+                        <input class="topic-form" type="text"
+                            placeholder="Defina um tópico sucinto para notificar os autores...">
+                        <div class="container-form">
+                            <p>Conteúdo</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="buttons-form">
+                        <div class="edit-text">
+                            <img src="./images/bold.png" alt="Negrito">
+                            <img src="./images/italic.png" alt="Itálico">
+                        </div>
+                        <button onclick="CreateTopic('form', 'send')">Enviar</button>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <!-- Formulário enviado -->
+                <div class="send">
+                    <div class="send-topic">
+                        <h4>Seu tópico foi enviado com sucesso! :D</h4>
+                        <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu
+                            tópico for respondido!</p>
+                        <a href="#">Descubra outros trabalhos!</a>
+                        <div class="divide">
+                            <button>criar novo tópico</button>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="card-send">
+                        <div class="card">
+                            <div class="card-header">
+                                <p class="topic">Assunto da pergunta aparece aqui</p>
+                                <p class="name">Carlos Henrique Santos</p>
+                                <p class="question">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo
+                                    da análise da dimensão e impacto de processo formativo situado impacto de processo
+                                    formativo processo...</p>
+                            </div>
+                            <div class="card-footer">
+                                <img src="./images/moreInformation.png" alt="Mais Informações">
+                                <img src="./images/favoriteCard.png" alt="Favoritar">
+                                <p>1 like</p>
+                                <p>1 resposta</p>
+                            </div>
+                        </div>
+                        <div class="success">
+                            <img src="./images/success.png" alt="Sucesso">
+                            <p>Aguardando feedback dos autores</p>
+                            <a href="#">Editar tópico</a>
+                        </div>
                     </div>
                 </div>
                 <div class="cards">
@@ -171,13 +231,17 @@
                     <a href="#">Saiba mais</a>
                 </div>
                 <div class="footer-text">
-                    <p><b>Preservar a memória do evento e ampliar o acesso ao conhecimento cientifico</b> gerado em eventos
+                    <p><b>Preservar a memória do evento e ampliar o acesso ao conhecimento cientifico</b> gerado em
+                        eventos
                         é a razão de ser da plataforma Galoá Proceedings.</p>
-                    <p>Os trabalhos publicados aqui tem maior alcance e ficam disponíveis para toda a comunidade científica,
-                        mantendo aceso o debate científico fomentado pelos encontros e aumentando o impacto do evento.</p>
+                    <p>Os trabalhos publicados aqui tem maior alcance e ficam disponíveis para toda a comunidade
+                        científica,
+                        mantendo aceso o debate científico fomentado pelos encontros e aumentando o impacto do evento.
+                    </p>
                 </div>
             </div>
         </footer>
     </section>
 </body>
+
 </html>
