@@ -309,9 +309,13 @@ h3{
     margin: 1.875rem 2.68rem;
 }
 
-.abstract p{
-    padding: 0.938rem;
+.abstract .text-abstract{
+    height: 9rem;
+    overflow: hidden;
+}
 
+.abstract p{
+    margin: 0.938rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     font-size: 0.875rem;
@@ -665,6 +669,54 @@ h4{
     margin-right: 0.938rem;
     margin-bottom: 1.125rem;
 }
+
+#card2 .comment-none{
+    display: none;
+}
+
+.comment-highlight{
+    background: #F8F8F8;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    border-radius: 0px;
+}
+
+.comment-highlight .comment-card{
+    padding: 0.625rem 1.5rem 2.25rem;
+}
+
+.comment-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-name p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    
+    color: #5C5C5C;
+}
+
+.author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author p{
+    margin: 0 2.125rem;
+
+    font-size: 0.875rem;
+
+    color: #ED7839;
+}
+
+.comment-common .comment-card{
+    padding: 0.625rem 1.5rem 1.25rem;
+}
+
 
 footer{
     display: flex;
