@@ -58,6 +58,10 @@
     margin-left: 13.75rem;
 }
 
+.menu-toggle{
+    display: none;
+}
+
 .header-block{
     width: 100%;
     height: 4.25rem;
@@ -133,6 +137,7 @@
 p.welcome {
     text-align: right;
     font-size: 0.875rem;
+    margin-bottom: 0;
 }
 
 p.email{
@@ -232,6 +237,7 @@ p.email{
 }
 
 .video .painel{
+    margin-left: 2rem;
     width: 15.125rem;
 }
 
@@ -273,21 +279,25 @@ h3{
     overflow-y: auto;
 }
 
-.text-area::-webkit-scrollbar {
+.text-area::-webkit-scrollbar, 
+.text-abstract::-webkit-scrollbar{
 	width: 3px;
 }
 
-.text-area::-webkit-scrollbar-track{
+.text-area::-webkit-scrollbar-track,
+.text-abstract::-webkit-scrollbar-track{
     background-color: #E7E7E7;
     border-radius: 5px;
 }
 
-.text-area::-webkit-scrollbar-thumb{
+.text-area::-webkit-scrollbar-thumb
+.text-abstract::-webkit-scrollbar-thumb{
     background-color: #BFBFBF;
     border-radius: 5px;
 }
 
-.text-area::-webkit-scrollbar-thumb:hover{
+.text-area::-webkit-scrollbar-thumb:hover
+.text-abstract::-webkit-scrollbar-thumb:hover{
     background-color: #ccc;
 }
 
@@ -311,7 +321,7 @@ h3{
 
 .abstract .text-abstract{
     height: 9rem;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .abstract p{

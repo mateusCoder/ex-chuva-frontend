@@ -17,11 +17,6 @@ ChangeDisplay = (display) =>{
         }
 }
 
-Expand = () =>{
-        let text = "<b>aloooo</b>"
-        let verMais = document.querySelector(`.text-abstract`)
-        verMais.innerHTML + text
-}
 
 
 
