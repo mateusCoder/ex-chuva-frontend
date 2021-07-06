@@ -3,8 +3,7 @@ CreateTopic = (displayBlock, displayNone) =>{
         let chageToBlock =  document.querySelector(`.${displayNone}`)
 
         changeToNone.style.display = 'none'
-        chageToBlock.style.display = 'block'
-        
+        chageToBlock.style.display = 'block' 
 }
 
 ChangeDisplay = (display) =>{

@@ -237,7 +237,7 @@ p.email{
 }
 
 .video .painel{
-    margin-left: 2rem;
+    margin: 1.875rem 2.68rem;
     width: 15.125rem;
 }
 
@@ -348,6 +348,8 @@ h4{
     font-weight: bold;
     font-size: 1.125rem;
 
+    text-align: center;
+
     color: #ED7839;
 }
 
@@ -367,7 +369,7 @@ h4{
 }
 
 .painel .header-topic .images img{
-    margin-right: 3.25rem;
+    margin: auto 3rem;
 }
 
 .divide{
