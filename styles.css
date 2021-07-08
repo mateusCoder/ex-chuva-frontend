@@ -52,6 +52,8 @@
 .nav-bar a:hover{
     background-color: #FDF1EB;
     text-indent: 1.813rem;
+
+    border-left: 5px solid #ED7839;
 }
 
 .container{
@@ -94,24 +96,57 @@
     align-items: center;
 }
 
-.language{
+.language-dropdown,
+.language-dropdown-option{
     width: 100px;
     height: 35px;
     margin-right: 2.5rem;
 
-    border: 1px solid #CCCCCC;
-    box-sizing: border-box;
-    border-radius: 3px;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    background-color: #FDF1EB;
+
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
 }
 
-.language span{
+.language-dropdown{
+    border-radius: 3px;
+}   
+
+.language{
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     font-size: 0.875rem;
+
+    list-style: none;
+    float: left;
+
+    cursor: pointer;
+}
+
+.language li{
+    position: relative;
+    float: left;
+}
+
+.language li  ul{
+    padding: 0;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    display: none;
+}
+
+.language li:hover ul, .language li.over ul{
+    display: block;
+}
+
+.language li ul li{
+    display: block;
+    width: 100px;
 }
 
 .account{
@@ -192,6 +227,12 @@ p.email{
     font-size: 1rem;
     font-weight: 500;
     color: #FFFFFF;
+
+    transition: 0.3s;
+}
+
+.buttons button:hover{
+    background-color: #eb651e;
 }
 
 #download,
@@ -224,8 +265,12 @@ p.email{
     color: #ED7839;
 }
 
+.options a:hover{
+    text-decoration: underline;
+}
+
 .video{
-    margin: 20px 3.5rem auto;
+    margin: auto 3.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -237,7 +282,7 @@ p.email{
 }
 
 .video .painel{
-    margin: 1.875rem 2.68rem;
+    margin: auto auto auto 2rem;
     width: 15.125rem;
 }
 
@@ -319,20 +364,42 @@ h3{
     margin: 1.875rem 2.68rem;
 }
 
-.abstract .text-abstract{
-    height: 9rem;
-    overflow-y: scroll;
+.expand-abstract{
+    margin: 0.938rem;
 }
 
-.abstract p{
-    margin: 0.938rem;
+.abstract .text-abstract{
+    height: 9rem;
+    overflow-y: hidden;  
+}
+
+.see-more {
+    margin-top: 0;
+    display: block;
+    float: inline-end;
+}
+
+.abstract p,
+.see-more span{
     font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
     font-size: 0.875rem;
     line-height: 1.422rem;
     letter-spacing: 0.02em;
 
+    text-align: justify; 
+}
+
+.abstract p{
+    font-weight: 400;
     color: #5C5C5C;
+}
+
+.see-more span{
+    color: #ED7839;
+    font-weight: 700;
+    text-decoration: none; 
+    
+    cursor: pointer;
 }
 
 .header-topic{    
@@ -404,7 +471,7 @@ h4{
 }
 
 .more{
-    margin-left: 0.5rem;
+    margin-left: 0.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -644,6 +711,8 @@ h4{
     box-sizing: border-box;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+
+    cursor: pointer;
 }
 
 .card-header .topic{
@@ -680,6 +749,10 @@ h4{
 .card-footer img, p{
     margin-right: 0.938rem;
     margin-bottom: 1.125rem;
+}
+
+.card-footer img{
+    cursor: pointer;
 }
 
 #card2 .comment-none{
@@ -764,6 +837,13 @@ footer a{
     
     background-color: #36144a;
     border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+footer a:hover{
+    color: #36144a;
+    background-color: #FFF;
 }
 
 footer .know-more{

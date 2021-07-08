@@ -48,7 +48,8 @@
     }
 
     .options{
-        margin: 0
+        margin: 0;
+        margin-bottom: 0.5rem
     }
 
     .subtitle h5{
@@ -226,10 +227,6 @@
 @media (max-width: 320px) {
     p.welcome{
         text-align: center;
-    }
-
-    .options{
-        margin-bottom: 0.5rem
     }
 
     .video iframe{
